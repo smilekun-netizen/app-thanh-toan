@@ -14,4 +14,6 @@ function thanhToan() {
   const item = document.createElement("li");
   item.textContent = result;
   history.appendChild(item);
+
 }
+console.log("Script đã chạy");
