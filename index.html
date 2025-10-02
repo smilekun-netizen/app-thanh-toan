@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ứng dụng thanh toán</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ứng dụng thanh toán đơn giản</h1>
+  <label>Số tiền:</label>
+  <input type="number" id="amount" placeholder="Nhập số tiền"><br>
+
+  <label>Phương thức thanh toán:</label><br>
+  <input type="radio" name="method" value="Tiền mặt" checked> Tiền mặt<br>
+  <input type="radio" name="method" value="Chuyển khoản"> Chuyển khoản<br>
+  <input type="radio" name="method" value="Mã QR"> Mã QR<br>
+
+  <button onclick="thanhToan()">Xác nhận thanh toán</button>
+
+  <h2>Lịch sử giao dịch</h2>
+  <ul id="history"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
